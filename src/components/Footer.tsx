@@ -1,12 +1,13 @@
-import { Camera, Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="border-t border-border py-12 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-2">
-          <Camera className="w-5 h-5 text-primary" />
-          <span className="font-display text-lg italic">Raja Creative Studios</span>
+          <img src={logo} alt="Raja Creative Studios Logo" className="w-20 h-20" />
+          {/* <span className="font-display text-lg italic">Raja Creative Studios</span> */}
         </div>
         <div className="flex items-center gap-6">
           <a href="https://instagram.com/raja_creativestudios" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
