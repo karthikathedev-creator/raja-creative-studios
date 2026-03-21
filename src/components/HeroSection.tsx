@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Wedding photography by Raja Creative Studios"
+          alt="Wedding photography by Raja Creatives Studios"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
@@ -23,8 +23,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="flex items-center justify-center gap-2 mb-6"
         >
-          <Camera className="w-5 h-5 text-primary" />
-          <span className="text-primary font-body tracking-[0.3em] uppercase text-sm">
+          {/* <Camera className="w-5 h-5 text-primary" /> */}
+          <span className="text-white font-body tracking-[0.3em] uppercase text-sm border border-foreground/30 px-2 py-1 rounded">
             Athe Mukhesh Varma
           </span>
         </motion.div>
@@ -36,7 +36,7 @@ const HeroSection = () => {
           className="text-5xl md:text-7xl lg:text-8xl font-display italic mb-4"
         >
           Raja{" "}
-          <span className="text-gradient not-italic font-bold">Creative</span>{" "}
+          <span className="text-gradient not-italic font-bold uppercase">Creative</span>{" "}
           Studios
         </motion.h1>
 
@@ -44,16 +44,16 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-muted-foreground font-light tracking-wide mb-8"
+          className="text-white md:text-xl text-muted-foreground font-light tracking-wide mb-4"
         >
-          Professional Photography — With Our Capture
+          Professional Photography & Videography Services for Your Special Moments
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center mb-6"
         >
           <a
             href="#services"

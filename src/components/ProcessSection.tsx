@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { MessageSquare, Palette, Eye, Package } from "lucide-react";
 
 const steps = [
-  { num: "01", title: "Consultation", desc: "We discuss your vision, preferences, and the story you want to tell.", icon: MessageSquare },
-  { num: "02", title: "Planning", desc: "We plan the shoot — location, timing, styling — everything to perfection.", icon: Palette },
-  { num: "03", title: "The Shoot", desc: "Our team captures every beautiful moment with professional precision.", icon: Eye },
-  { num: "04", title: "Delivery", desc: "Edited photos and albums delivered with meticulous attention to detail.", icon: Package },
+  { num: "01", title: "CONSULTATION", desc: "We discuss your vision, preferences, and the story you want to tell.", icon: MessageSquare },
+  { num: "02", title: "PLANNING", desc: "We plan the shoot — location, timing, styling — everything to perfection.", icon: Palette },
+  { num: "03", title: "THE SHOOT", desc: "Our team captures every beautiful moment with professional precision.", icon: Eye },
+  { num: "04", title: "DELIVERY", desc: "Edited photos and albums delivered with meticulous attention to detail.", icon: Package },
 ];
 
 const ProcessSection = () => {

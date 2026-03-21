@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Camera, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,8 +26,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2">
-          <Camera className="w-5 h-5 text-primary" />
-          <span className="font-display text-lg italic">Raja Creative Studios</span>
+          <img src={logo} alt="Raja Creative Studios Logo" className="w-20 h-20" />
         </a>
 
         {/* Desktop nav */}

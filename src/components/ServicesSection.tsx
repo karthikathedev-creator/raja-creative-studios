@@ -1,18 +1,13 @@
 import { motion } from "framer-motion";
-import weddingImg from "@/assets/hero-wedding.jpg";
-import sareeImg from "@/assets/saree-ceremony.jpg";
-import birthdayImg from "@/assets/birthday.jpg";
-import commercialImg from "@/assets/commercial.jpg";
-import corporateImg from "@/assets/corporate.jpg";
-import fashionImg from "@/assets/fashion.jpg";
 
 const services = [
-  { title: "Wedding", image: weddingImg, desc: "Capturing the magic of your special day with timeless elegance." },
-  { title: "Saree Ceremony", image: sareeImg, desc: "Beautiful moments of tradition and grace, preserved forever." },
-  { title: "Birthday", image: birthdayImg, desc: "Celebrating milestones with vibrant and joyful photography." },
-  { title: "Commercial", image: commercialImg, desc: "Professional product and brand photography for your business." },
-  { title: "Corporate", image: corporateImg, desc: "Polished headshots and event coverage for professionals." },
-  { title: "Fashion", image: fashionImg, desc: "Bold, dramatic fashion shoots that make a statement." },
+  { title: "WEDDING CEREMONY", desc: "Capturing the magic of your special day with timeless elegance." },
+  { title: "SAREE CEREMONY", desc: "Beautiful moments of tradition and grace, preserved forever." },
+  { title: "BIRTHDAY", desc: "Celebrating milestones with vibrant and joyful photography." },
+  { title: "COMMERCIAL", desc: "Professional product and brand photography for your business." },
+  { title: "CORPORATE", desc: "Polished headshots and event coverage for professionals." },
+  { title: "FASHION", desc: "Traditional, dramatic fashion shoots that make a statement." },
+  { title: "OTHER EVENTS", desc: "Memorable photography for all your special memories." },
 ];
 
 const ServicesSection = () => {
@@ -37,20 +32,10 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group glass-card overflow-hidden cursor-pointer"
+              className="group glass-card p-6 text-center cursor-pointer hover:bg-primary/10 transition-colors"
             >
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={`${service.title} photography`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-display mb-2">{service.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
-              </div>
+              <h3 className="text-xl font-display mb-2">{service.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
             </motion.div>
           ))}
         </div>
