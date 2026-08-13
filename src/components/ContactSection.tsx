@@ -22,7 +22,7 @@ const ContactSection = () => {
             { icon: Phone, label: "Call Us", value: "+91 6302600192", href: "tel:+919676379958" },
             { icon: Instagram, label: "Instagram", value: "@raja_creativestudios", href: "https://instagram.com/raja_creativestudios" },
             { icon: Mail, label: "Email", value: "rajacreativestudios@gmail.com", href: "mailto:rajacreativestudios@gmail.com" },
-            { icon: MapPin, label: "Location", value: "2-6-943,KLN Reddy Colony, Subedari, Hanamkonda, Telangana 506001, India", href: "https://www.google.com/maps/@17.9998458,79.5489271,3a,75y,46.65h,81.87t/data=!3m7!1e1!3m5!1sE8OxwG2Z5AY0jMW-qkgllw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D8.12601846874476%26panoid%3DE8OxwG2Z5AY0jMW-qkgllw%26yaw%3D46.64828247916847!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" },
+            { icon: MapPin, label: "Location", value: "2-6-943,KLN Reddy Colony, Subedari, Hanamkonda, Telangana 506001, India", href: "https://www.google.com/maps/dir/?api=1&destination=2-6-943,KLN%20Reddy%20Colony,%20Subedari,%20Hanamkonda,%20Telangana%20506001,%20India" },
           ].map((item, i) => (
             <motion.a
               key={item.label}
