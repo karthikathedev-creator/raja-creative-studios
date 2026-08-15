@@ -22,7 +22,7 @@ const ContactSection = () => {
             { icon: Phone, label: "Call Us", value: "+91 6302600192", href: "tel:+919676379958" },
             { icon: Instagram, label: "Instagram", value: "@raja_creativestudios", href: "https://instagram.com/raja_creativestudios" },
             { icon: Mail, label: "Email", value: "rajacreativestudios@gmail.com", href: "mailto:rajacreativestudios@gmail.com" },
-            { icon: MapPin, label: "Location", value: "2-6-943,KLN Reddy Colony, Subedari, Hanamkonda, Telangana 506001, India", href: "https://www.google.com/maps/dir/?api=1&destination=2-6-943,KLN%20Reddy%20Colony,%20Subedari,%20Hanamkonda,%20Telangana%20506001,%20India" },
+            { icon: MapPin, label: "Location", value: "RAJACREATIVESTUDIOS, KLN Reddy Colony, Subedari, Hanamkonda, Telangana 506001", href: "https://www.google.com/maps/dir/?api=1&destination=RAJACREATIVESTUDIOS%2C%20KLN%20Reddy%20Colony%2C%20Subedari%2C%20Hanamkonda%2C%20Telangana%20506001" },
           ].map((item, i) => (
             <motion.a
               key={item.label}
